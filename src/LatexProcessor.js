@@ -2,7 +2,7 @@
 
 var latexParser = require("latex-parser");
 
-export class LatexProcessor {
+module.exports = class LatexProcessor {
   constructor(config) {
     this.config = config;
   }
@@ -24,4 +24,4 @@ export class LatexProcessor {
       }
     };
   }
-}
+};
