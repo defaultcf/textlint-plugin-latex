@@ -1,10 +1,9 @@
 "use strict";
 
-var latexParser = require("latex-parser");
-
 module.exports = class LatexProcessor {
   constructor(config) {
     this.config = config;
+    this.latexParser = require("latex-parser");
   }
 
   static availableExtensions() {
@@ -14,7 +13,7 @@ module.exports = class LatexProcessor {
   processor(ext) {
     return {
       preProcess(text, filePath) {
-        return latexParser.parse(text);
+        return this.latexParser.parse(text);
       },
       postProcess(messages, filePath) {
         return {
