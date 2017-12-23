@@ -1,6 +1,6 @@
 "use strict";
 
-import { latexParser } from "latex-parser";
+var latexParser = require("latex-parser");
 
 export class LatexProcessor {
   constructor(config) {

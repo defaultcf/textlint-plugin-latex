@@ -1,5 +1,3 @@
-import { LatexProcessor } from "./LatexProcessor";
-
-module.export = {
-  Processor: LatexProcessor
+export default {
+  Processor: require("./LatexProcessor")
 };
