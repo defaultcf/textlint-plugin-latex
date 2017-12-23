@@ -14,7 +14,7 @@ export class LatexProcessor {
   processor(ext) {
     return {
       preProcess(text, filePath) {
-        return parse(text);
+        return latexParser.parse(text);
       },
       postProcess(messages, filePath) {
         return {
