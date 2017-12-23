@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "author": "i544c <leo@i544c.me>",
-  "license": ""
+  "license": "",
+  "dependencies": {
+    "latex-parser": "^0.6.2"
+  }
 }
